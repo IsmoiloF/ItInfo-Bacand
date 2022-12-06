@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+</html>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <h1>Yangi User</h1>
+    <form action="/add-post" method="post" id="post-form">
+        <label for="userId">userID</label>
+        <input type="text" name="userId" id="userId"><br><br>
+        <label for="ID">Your ID</label>
+        <input type="text" name="ID" id="ID"><br><br>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title"><br><br>
+        <label for="body">Text body</label>
+        <textarea name="body" id="body" cols="30" rows="50"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>

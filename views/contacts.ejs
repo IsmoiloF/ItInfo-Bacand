@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/nav.ejs") %>
+    <ol>
+        <% contact.forEach((contact)=>{ %>
+        <li><a href="<%= contact.link  %>"><%= contact.name %> </a></li>  
+        <% }) %>
+    </ol>
+    <h1>Contacts</h1>
+
+</body>
+</html>
+<!-- <script>
+const activePage = window.location.pathname
+const navlinks =document.querySelectorAll('nav a').forEach(link=>{
+    if(link.href.includes( `${activePage}`)){
+        link.classList.add('active')
+    }
+})
+</script> -->

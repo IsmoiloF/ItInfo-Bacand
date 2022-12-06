@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+
+<body>
+    <%- include("./partials/nav.ejs") %>
+   <h1> Jobs </h1>
+
+    <ul>
+    <% jobs.forEach((job)=>{ %>
+    <li><%= job %></li>  
+    <% }) %>
+    </ul>
+</body>
+</html>
+
+<!-- <script>
+    const activePage = window.location.pathname
+    const navlinks =document.querySelectorAll('nav a').forEach(link=>{
+    if(link.href.includes( `${activePage}`)){
+        link.classList.add('active')
+    }
+})
+</script> -->

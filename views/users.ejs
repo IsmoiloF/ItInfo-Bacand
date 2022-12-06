@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/nav.ejs") %>
+    <h3><a href="/add-user">Add new Users</a></h3>
+    <ol>
+        <% users.forEach((user)=>{ %>
+        <li>
+            <a href="/user/<%= user.id %>">
+            <span><%= user.username %></span><%= user.email  %></li>  
+        <% }) %>
+    </ol>
+</body>
+</html>
+<!-- <script>
+    const activePage = window.location.pathname
+const navlinks =document.querySelectorAll('nav a').forEach(link=>{
+    if(link.href.includes( `${activePage}`)){
+        link.classList.add('active')
+    }
+})
+</script> -->

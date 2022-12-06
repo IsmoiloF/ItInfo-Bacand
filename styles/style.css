@@ -1,0 +1,39 @@
+
+nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgb(24, 9, 101);
+        }
+  
+nav ul li {
+          float: left;
+        }
+  
+nav li a {
+          font-size: 30px;
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 24px 26px;
+          text-decoration: none;
+        }
+  
+nav li a:hover {
+          background-color: rgb(26, 65, 221);
+        }
+nav .active {
+          background-color: rgb(195, 5, 21);
+          
+
+        }
+img{
+  width: 200px;
+  height: 240px;
+}
+.test{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
